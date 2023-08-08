@@ -154,20 +154,20 @@ public class excersize2 {
                                     else if(mark3<75) StatusSub3 = "\033[32m Credit Pass \033[0m";
                                     else StatusSub3="\033[34m Distinguished Pass \033[0m";
                                     System.out.println("+------------------------------------------------+");
-                                    System.out.printf("|  Name: \033[34;1m %-37s \033[0m |\n",name.toUpperCase());
-                                    System.out.printf("|  Age : %d  years old %26s| \n",age," ");
+                                    System.out.printf("|  Name  : \033[34;1m %-35s \033[0m |\n",name.toUpperCase());
+                                    System.out.printf("|  Age   :  %d  years old %23s| \n",age," ");
                                     System.out.printf("|  Status: %1$s %2$-35s \033[0m | \n",colurCode,status);
-                                    System.out.printf("|  Total: %-16.2f   Avg: %-14.2f |\n",total,avg);
-                                    System.out.println("+------------------------------------------------+");
-                                    System.out.printf("| Subject %1$s | Mark %1$8s | Status %1$12s| \n"," ");
-                                    System.out.println("+------------------------------------------------+");
+                                    System.out.printf("|  Total :  %-16.2f   Avg: %-12.2f |\n",total,avg);
+                                    System.out.println("+-----------+--------------+---------------------+");
+                                    System.out.printf("| Subject %1$s | Mark %1$7s | Status %1$13s| \n"," ");
+                                    System.out.println("+-----------+--------------+---------------------+");
                                     int subName1 = Integer.valueOf(sub1.substring(3));
                                     int subName2 = Integer.valueOf(sub2.substring(3));
                                     int subName3 = Integer.valueOf(sub3.substring(3));
-                                    System.out.printf("| SE- %1$03d   | %2$-11.2f  | %3$28s |\n",subName1,mark1,StatusSub1);
-                                    System.out.printf("| SE- %1$03d   | %2$-11.2f  | %3$28s |\n",subName2,mark2,StatusSub2);
-                                    System.out.printf("| SE- %1$03d   | %2$-11.2f  | %3$28s |\n",subName3,mark3,StatusSub3);
-                                    System.out.println("+------------------------------------------------+");
+                                    System.out.printf("| SE- %1$03d   | %2$-11.2f  |%3$-29s |\n",subName1,mark1,StatusSub1);
+                                    System.out.printf("| SE- %1$03d   | %2$-11.2f  |%3$-29s |\n",subName2,mark2,StatusSub2);
+                                    System.out.printf("| SE- %1$03d   | %2$-11.2f  |%3$-29s |\n",subName3,mark3,StatusSub3);
+                                    System.out.println("+-----------+--------------+---------------------+");
                                    }
 
                                 }
